@@ -1,0 +1,66 @@
+#chatroom_channels{
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+#chatroom_channels label{
+    text-align: left;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.chatroom_channel {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+}
+
+.chatroom_channel_image{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 1px #ffffff;
+    border-radius: 100%;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#chatroom_chat{
+    height: 100%;
+}
+
+#conversation{
+  overflow-y:scroll;
+}
+
+#chatroom_chat_messages {
+    background-color: #c1dde6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#chatroom_chat_input{
+    height: 50px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 1px solid white;
+    border-radius: 0;
+    background-color: grey;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#chatroom_chat_input:focus{
+    outline: none;
+    box-shadow: 0 0 0 0;
+}
+
+#messsagefield{
+    text-align: left;
+}

@@ -1,0 +1,24 @@
+<div style="width:400px">
+    <p class="title">
+        please login
+    </p>
+    <div>
+        <div class="row">
+            <div class="input-field">
+                <input [(ngModel)]="username" id="email" type="text" validate>
+                <label for="username">username</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <input [(ngModel)]="password" id="password" type="password" class="validate">
+                <label for="password">password</label>
+            </div>
+        </div>
+
+        <button (click)="login()" type="submit" name="action">Login</button>
+        <br><br>
+        <p *ngIf="error" style="margin-bottom:0; font-weight:900 ;color:#bb2b2b">login fail.</p>
+    </div>
+</div>

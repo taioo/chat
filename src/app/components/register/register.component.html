@@ -1,0 +1,25 @@
+<div style="width:400px">
+    <p class="title">
+        Register in whatsapp Fake.
+    </p>
+    <div>
+        <div class="row">
+            <div class="input-field">
+                <input [(ngModel)]="username" id="email" type="text" validate>
+                <label for="username">username</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <input [(ngModel)]="password" id="password" type="password" class="validate">
+                <label for="password">password</label>
+            </div>
+        </div>
+
+        <button (click)="register()" type="submit" name="action">Register</button>
+        <br><br>
+        <p *ngIf="error" style="margin-bottom:0; color:#bb2b2b">Register error: <br>{{errorMessage}}</p>
+        <p *ngIf="success" style="margin-bottom:0; color:green">Successful</p>
+    </div>
+</div>
