@@ -3,11 +3,31 @@
 
 
 ## Installation
+
+### npm:
 ```
 npm install
 ```
+### mysql:
+```
+CREATE DATABASE chat;
 
-## run
+USE chat;
+
+CREATE TABLE user (
+  username VARCHAR(10) PRIMARY KEY,
+  password TEXT
+)
+```
+
+### mongodb:
+just run
+```
+mongo
+```
+
+
+## run:
 ```
 ng build --watch
 ```
